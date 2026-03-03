@@ -35,3 +35,9 @@ The result is saved in `<modified>.patcher`.
 Does the entire patcher creation task.
 Creates `diff.patcher` and `hash.bin` files from the files provided in the arguments,
 and saves the zip result to `<destination>`.
+
+## Creating a FilePatcher zipfile
+A FilePatcher zipfile has 2 entries: `hash.bin`, the hash of the original file (optional but recommended), and `diff.patcher`, which will transform the original file into the modded one.
+Start by using FilePatcher.jar to create a hash of the original file using `--generateHash`, and them use it to create the patcher file using `--generateDiff`.
+Rename both generated files to comply with the program's requirements and put both in a .zip file.
+Now, you can share the zip with everyone! (They need to also have a copy of FilePatcher.jar of course)
