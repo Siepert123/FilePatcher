@@ -31,7 +31,7 @@ Result saved in `<file>_hash.bin`.
 ### `--generateDiff <original> <modified>`
 Generates the main patcher file. The original file must be smaller than the modified file for it to work!
 The result is saved in `<modified>.patcher`.
-### `--compile <original> <modified> <destination>`
+### `--compile <original> <modified> <destination>` (to-be-implemented)
 Does the entire patcher creation task.
 Creates `diff.patcher` and `hash.bin` files from the files provided in the arguments,
 and saves the zip result to `<destination>`.
